@@ -1,4 +1,57 @@
-/* BASIC FORMATTING */
+/*BASIC FORMATTING */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --black: #000000;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --lightblue: #cadbf8;
+  --font-family: Montserrat;
+  --h1-line-height: 1.1667;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --font-weight: 300;
+  --text-transform: uppercase;
+  --margin: 0;
+  --h3-font-size: 1.75rem;
+  --body-font-size: 1.125rem;
+  --body-line-height: 1.5;
+}
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: var(--font-weight);
+  text-transform: var(--text-transform);
+  margin: var(--margin);
+  color: var(--white);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h1-line-height);
+  text-transform: var(--text-transform);
+  font-weight: var(--font-weight);
+}
+
+h3 {
+  font-weight: var(--line-weight);
+  line-height: var(--h1-line-height);
+  font-size: (--h3-font-size);
+}
+
+body {
+  font-size: (--body-font-size);
+  line-height: (--body-line-height);
+  margin: (--margin);
+  font-family: var(--font-family);
+}
+.button {
+  color: var(--catalina);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -13,4 +66,50 @@ body {
   background-color: #063270;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-flow: row wrap;
+  
+ 
+}
+.banner {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+ nav a {
+   color: var(--white);
+    text-decoration: none;
+ }
+
+
+@media (min-width: 650px) {
+ 
+}
+
+@media (min-width: 1000px) {
+  header {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
