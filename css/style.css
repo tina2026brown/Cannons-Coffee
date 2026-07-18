@@ -48,8 +48,8 @@ body {
   margin: (--margin);
   font-family: var(--font-family);
 }
-.button {
-  color: var(--catalina);
+.cards .button {
+  background-color: var(--catalina);
 }
 
 html {
@@ -63,23 +63,28 @@ html {
 
 body {
   color: black;
-  background-color: #063270;
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  padding: 2rem;
+  padding: 0;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #06327d;
+  border: 40px solid #06327d;
+  
 }
 header {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-flow: row wrap;
-  
- 
+   background-color: #063270;
+   border-bottom: 10px solid #ffd034;
+   padding-bottom: 2rem
+   
+
 }
 .banner {
   display: flex;
@@ -87,29 +92,80 @@ header {
   align-items: baseline;
 }
 nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 2rem;
-    text-decoration: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  background: var(--white);
+  img {
+    border-radius: 0;
   }
+}
 
- nav a {
-   color: var(--white);
-    text-decoration: none;
- }
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.button {
+  background-color: var(--vegan);
+  display: inline-block;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.coffee-cards {
+  background-color: var(--lightblue);
+  padding: 2rem;
+  border-bottom: 10px solid #ffd034;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+footer {
+
+  text-align: center;
+  color: var(--white);
+}
 
 @media (min-width: 650px) {
- 
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1000px) {
   header {
     justify-content: space-between;
     align-items: baseline;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
