@@ -119,6 +119,18 @@ nav a {
   }
 }
 
+.java {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  background: var(--white);
+   border-bottom: 10px solid #ffd034;
+  img {
+    border-radius: 0;
+  }
+}
+
 img {
   max-width: 100%;
   border-radius: 12px;
