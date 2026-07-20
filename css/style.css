@@ -1,6 +1,15 @@
 /*BASIC FORMATTING */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 :root {
   --black: #000000;
   --catalina: #06327d;
@@ -52,17 +61,9 @@ body {
   background-color: var(--catalina);
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
 body {
-  color: black;
+  color: var(--black);
   margin: 0;
   padding: 0;
 }
@@ -71,8 +72,8 @@ body {
   padding: 0;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #06327d;
-  border: 40px solid #06327d;
+  background-color: var(--catalina);
+ 
   
 }
 header {
@@ -80,8 +81,7 @@ header {
   gap: 2rem;
   justify-content: center;
   flex-flow: row wrap;
-   background-color: #063270;
-   border-bottom: 10px solid #ffd034;
+   border-bottom: 10px solid var(--sunglow);
    padding-bottom: 2rem
    
 
@@ -125,7 +125,7 @@ nav a {
   gap: 1rem;
   align-items: center;
   background: var(--white);
-   border-bottom: 10px solid #ffd034;
+   border-bottom: 10px solid var(--sunglow);
   img {
     border-radius: 0;
   }
@@ -152,7 +152,7 @@ img {
 .coffee-cards {
   background-color: var(--lightblue);
   padding: 2rem;
-  border-bottom: 10px solid #ffd034;
+  border-bottom: 10px solid var(--sunglow);
 }
 
 .cards {
@@ -173,6 +173,8 @@ footer {
 }
 
 @media (min-width: 1000px) {
+   .wrapper {border: 30px solid var(--catalina);
+   }
   header {
     justify-content: space-between;
     align-items: baseline;
