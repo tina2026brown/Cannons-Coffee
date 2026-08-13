@@ -26,11 +26,47 @@
         </ul>
       </nav>
     </header>
-    <main>
       <body>
+    <main>
+      <form id="form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="user_name" />
+<br>
+
+<label for="mail">Email:</label>
+<input type="email" id="mail" name="user_email" />
+<br>
+
+<label for="telNo">Phone number:</label>
+<input id="telNo" name="telNo" type="tel" />
+<br>
+
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments"></textarea>
+<br>
+
+<label for="flavor">Coffee flavor:</label>
+<select id="flavor" name="flavor">
+  <option>original roast</option>
+  <option>hazelnut</option>
+  <option>caramel</option>
+
+  <input type="radio" name="question" value="buyOrEmploy" required>
+  <label>I am buying coffee</label>
+
+  <input type="radio" name="question" value="buyOrEmploy" required>
+  <label>I am seeking employment</label>
+
+  <p class="button">
+    <button type="submit">Submit</button>
+  </p>
+</form>
+
+<div class="container"></div>
+</main>
   <script src="js/custom-inquiry.js"></script>
   </body>
-    </main>
+  
     <footer>
       <img src="images/logo-footer.png" alt="Cannons Coffee" />
       <p>&copy; 2026 Cannons Coffee. All Rights Reserved</p>
