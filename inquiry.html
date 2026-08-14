@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="grid">
 
   <head>
     <link rel="stylesheet" href="css/style.css">
@@ -8,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
+  <body>
+    <div class="grid">
   <div class="wrapper">
     <header>
       <div class="banner">
@@ -16,46 +17,48 @@
       </div>
       <nav>
         <ul>
-          <li><a href="custom-inquiry.html">Custom Inquiry</a></li>
           <li><a href="inquiry.html">Inquiry</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="latte.html">Coffee</a></li>
-          <li><a href="https://www.coffeemadnesslvnv.com" target="_blank">About</a></li>
+          <li><a href="https://www.madhouse.coffee/" target="_blank">About</a></li>
           <li><a href="mailto:tina.2026.brown@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </header>
-      <body>
     <main>
       <form id="form">
+        <br><br>
 <label for="name">Name:</label>
 <input type="text" id="name" name="user_name" />
-<br>
+<br><br>
 
 <label for="mail">Email:</label>
 <input type="email" id="mail" name="user_email" />
-<br>
+<br><br>
 
 <label for="telNo">Phone number:</label>
 <input id="telNo" name="telNo" type="tel" />
-<br>
+<br><br>
 
 <label for="comments">Comments:</label>
 <textarea id="comments" name="comments"></textarea>
-<br>
+<br><br>
 
 <label for="flavor">Coffee flavor:</label>
 <select id="flavor" name="flavor">
-  <option>original roast</option>
-  <option>hazelnut</option>
-  <option>caramel</option>
+  <option value="original">original roast</option>
+  <option value="hazelnut">hazelnut</option>
+  <option value="caramel">caramel</option>
+  </select>
+  <br><br>
 
   <input type="radio" name="question" value="buyOrEmploy" required>
   <label>I am buying coffee</label>
 
   <input type="radio" name="question" value="buyOrEmploy" required>
   <label>I am seeking employment</label>
+  <br><br>
 
   <p class="button">
     <button type="submit">Submit</button>
@@ -64,14 +67,12 @@
 
 <div class="container"></div>
 </main>
-  <script src="js/custom-inquiry.js"></script>
-  </body>
-  
     <footer>
       <img src="images/logo-footer.png" alt="Cannons Coffee" />
       <p>&copy; 2026 Cannons Coffee. All Rights Reserved</p>
     </footer>
   </div>
 </div>
-
+  <script src="js/custom-inquiry.js"></script>
+  </body>
 </html>
