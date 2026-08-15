@@ -12,7 +12,7 @@ function onFormSubmit(event) {
   let email = dataObject.user_email;
   let password = dataObject.password;
 
-    messageContainer.innerHTML = `Welcome, ${name}! You are logged in!`
+  messageContainer.innerHTML= `Welcome, ${name}! You are logged in!`
 }
 
   form.addEventListener("submit", onFormSubmit);
